@@ -1,0 +1,240 @@
+@import url(./media.css);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.header{
+    height: 100vh;
+    /* background-image:url('https://asiamountains.net/upload/slide/slide-1960x857-07.jpg'); */
+    background-image:url('./../images/img_bg_2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Quicksand';
+}
+
+.overly{
+    background-color: rgba(39, 80, 141, 0.6);
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    font-size: 24px;
+    font-weight:500;
+    color: #fff
+}
+
+.menu__burger{
+    z-index: 11;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.menu__burger-btn{
+    width: 38px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+}
+
+.menu__burger-btn::before,
+.menu__burger-btn::after{
+    content:'';
+    position: absolute;
+    width: 38px;
+    height:3px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+}
+
+.menu__burger-btn::before{
+    transform: translateY(-10px);
+}
+.menu__burger-btn::after{
+    transform: translateY(10px);
+}
+
+.menu__burger.open .menu__burger-btn{
+    transform: translateX(-50px);
+    background-color: transparent;
+    box-shadow: none;
+}
+.menu__burger.open .menu__burger-btn::before{
+    transform: rotate(45deg) translate(35px, -35px)
+}
+
+.menu__burger.open .menu__burger-btn::after{
+    transform: rotate(-45deg) translate(35px, 35px)
+    
+}
+
+.header__menu{
+    position: absolute;
+    z-index: 10;
+    top: 0%;
+    right: 0%;
+    background-color: rgba(0,0,0,0.8);
+    padding: 150px 60px;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+}
+
+.menu__lists_a{
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+/* .header__menu_after{
+    top: 0%;
+    right: 20%;
+    transition: 1s;
+
+} */
+
+.menu__lists{
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.menu__lists li + li{
+    padding-top: 30px;
+    
+}
+
+.menu__lists li a{
+    text-decoration: none;
+    color: #fff   ;
+     padding: 10px;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+}
+
+
+
+.menu__lists_a li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: .5s;
+}
+
+
+
+.menu__lists_a li + li{
+    padding-left: 25px;
+}
+
+
+
+
+a {
+  font-size: 18px;
+  position: relative;
+}
+.menu__lists_a li a:hover{
+    color: rgba(171, 255, 46);
+    font-weight: ;
+}
+.menu__lists li a:hover{
+    color: rgba(171, 255, 46);
+    font-weight: ;
+}
+
+a:before, a:after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: rgb(171, 255, 46);
+}
+a:before {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+}
+a:after {
+  opacity: 0;
+  transform: translateY(4px);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+}
+a:hover:before, a:hover:after, a:focus:before, a:focus:after {
+  opacity: 1;
+  transform: translateY(0);
+}
+a:hover:before, a:focus:before {
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+}
+a:hover:after, a:focus:after {
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+}
+
+.main__title h1{
+    /* background-image: url('https://www.onlygfx.com/wp-content/uploads/2017/07/green-watercolor-brush-stroke-3-13.png'); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background: rgba(0,0,0,0.5); */
+    padding: 10px 0;
+    font-family: 'Acme', sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 8px;
+}
+
+h1 div {
+  position: relative;
+  top: 19px;
+  display: inline-block;
+  -webkit-animation: bounce 1s ease infinite alternate;
+  animation: bounce 1.5s ease  alternate;
+  font-family: 'Titan One', cursive;
+  line-height: 125px;
+  color: #f9f5f5;
+  text-shadow: 0 1px 0 #d0cbcb, 0 2px 0 #c7c3c3, 0 3px 0 #cecaca, 0 4px 0 #cecdcd, 0 5px 0 #ccc8c8, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 0 transparent, 0 11px 0 transparent, 0 12px 0 transparent, 0 13px 0 transparent, 0 14px 0 transparent, 0 15px 0 transparent, 0 10px 10px rgba(12, 12, 12, 0.42);
+}
+
+@keyframes bounce {
+    0%{
+        margin-top: 550px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
