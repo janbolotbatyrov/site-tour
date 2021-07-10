@@ -222,9 +222,7 @@ h1 div {
   position: relative;
   top: 19px;
   display: inline-block;
-  -webkit-animation: bounce 1s ease infinite alternate;
-  animation: bounce 1.5s ease  alternate;
-  font-family: 'Titan One', cursive;
+  animation: bounce 1.2s cubic-bezier(1,.61,.34,.81)  alternate;
   line-height: 125px;
   color: #f9f5f5;
   text-shadow: 0 1px 0 #d0cbcb, 0 2px 0 #c7c3c3, 0 3px 0 #cecaca, 0 4px 0 #cecdcd, 0 5px 0 #ccc8c8, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 0 transparent, 0 11px 0 transparent, 0 12px 0 transparent, 0 13px 0 transparent, 0 14px 0 transparent, 0 15px 0 transparent, 0 10px 10px rgba(12, 12, 12, 0.42);
@@ -232,9 +230,12 @@ h1 div {
 
 @keyframes bounce {
     0%{
-        margin-top: 550px;
+        margin-top:300px;
+        opacity: 0;
     }
+    
     100%{
         margin-top: 0px;
+        opacity: 1;
     }
 }
