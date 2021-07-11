@@ -1,6 +1,6 @@
 @media all and (min-width: 319px) {
     .container{
-        min-width: 300px;
+        min-width: 310px;
     }
     .header__menu_a{
         display: none;
@@ -8,10 +8,19 @@
     .tours__title{
         font-size: 18px !important;
     }
+    
+}
+@media all and (min-width: 359px) {
+    .container{
+        min-width: 358px;
+    }
+    .content__card{
+        height: 200px !important;
+    }
 }
 @media all and (min-width: 400px) {
     .container{
-        min-width: 360px;
+        min-width: 390px;
     }
     .header__menu_a{
         display: none;
@@ -29,7 +38,7 @@
 
 @media all and (min-width: 540px) {
     .container{
-        min-width: 480px;
+        min-width: 530px;
     }
     .menu__burger{
         min-height: 80px;
@@ -38,11 +47,14 @@
         font-size: 30px;
         font-weight: 500;
     }
+    .content__card{
+        height: 250px !important; 
+    }
 }
 
 @media all and (min-width: 768px) {
     .container{
-        min-width: 700px;
+        min-width: 750px;
     }
     .header__logo span{
         font-size: 35px;
@@ -66,7 +78,12 @@
         font-size: 30px;
         font-weight: 500;
     }
-    
+    .content__card{
+        height: 350px !important;
+    }
+    .card__mini{
+        width: 49% !important;
+    }
 }
 
 
@@ -84,4 +101,5 @@
         background-image:url('https://avatanplus.com/files/resources/original/58f5a2cf3f44c15b7f83f99b.jpg') !important;
         
     }
+    
 }

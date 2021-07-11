@@ -10,14 +10,21 @@
 }
 
 .content{
-    background-color: #F0FFFF;
+    background-color: #c2ffff;
+}
+
+.content__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .content__card{
+    width: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 150px;
+    height: 180px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -25,6 +32,10 @@
     justify-content: space-between;
     color: #FFF;
     margin-bottom: 20px;
+}
+
+.card__mini{
+    width: 100%;
 }
 
 .card__title{

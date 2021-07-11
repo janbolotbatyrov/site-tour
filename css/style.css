@@ -214,6 +214,7 @@ a:hover:after, a:focus:after {
     margin: 50px auto;
     padding:  60px 0px ;
     transition: .5s;
+    width: 90%;
 }
 .main__inner:hover{
     transform: scale(1.1);
