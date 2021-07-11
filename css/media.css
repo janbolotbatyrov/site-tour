@@ -5,6 +5,9 @@
     .header__menu_a{
         display: none;
     }
+    .tours__title{
+        font-size: 18px !important;
+    }
 }
 @media all and (min-width: 400px) {
     .container{
@@ -12,6 +15,15 @@
     }
     .header__menu_a{
         display: none;
+    }
+    .main__inner{
+        padding:  100px 0px !important;
+    }
+    .tours__card{
+        height: 200px !important;
+    }
+    .tours__info{
+        margin-top: 25% !important;
     }
 }
 
@@ -40,7 +52,7 @@
         font-size: 30px;
         font-weight: 500;
     }
-    
+    .
 }
 
 @media all and (min-width: 991px) {
@@ -68,5 +80,9 @@
     }
     .header__menu_a{
         display: block;
+    }
+    .header{
+        background-image:url('https://avatanplus.com/files/resources/original/58f5a2cf3f44c15b7f83f99b.jpg') !important;
+        
     }
 }
